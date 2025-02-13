@@ -91,9 +91,9 @@ def main():
     主函数：读取 train.txt (BIO格式)，
     解析并合并实体，然后将合并结果保存到指定目录下。
     """
-    input_file = r"/root/autodl-tmp/dataset/mathbook/中学数学NER数据集/train.txt"
+    input_file = r"/root/autodl-tmp/dataset/mathbook/中学数学NER数据集/test.txt"
     output_dir = r"/root/autodl-tmp/code/2025service_creativity/process_dataset/mathNER"
-    output_file = os.path.join(output_dir, "train.txt")
+    output_file = os.path.join(output_dir, "test.txt")
 
     # 确保输出目录存在
     os.makedirs(output_dir, exist_ok=True)
