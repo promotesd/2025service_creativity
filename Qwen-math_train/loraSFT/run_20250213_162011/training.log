@@ -1,3 +1,0 @@
-2025-02-13 16:20:11,373 - INFO - Starting LoRA SFT for Qwen-Math7B...
-2025-02-13 16:20:12,198 - INFO - [train] 8709, [val] 1107, [test] 1097
-2025-02-13 16:20:12,918 - INFO - Device 0 seems unavailable, Proceeding to check subsequent devices.

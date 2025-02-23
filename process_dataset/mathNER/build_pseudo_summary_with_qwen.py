@@ -37,7 +37,7 @@ def auto_explain_bracketed_term(qwen_model, qwen_tokenizer, device, term: str, w
 
 def main():
     device = "cuda" if torch.cuda.is_available() else "cpu"
-    model_path = '/root/autodl-tmp/model/Qwen2-math7B'
+    model_path = r'/root/autodl-tmp/model/Qwen2-math7B'
     print("Loading Qwen model...")
     qwen_model = AutoModelForCausalLM.from_pretrained(
         model_path,
@@ -47,13 +47,13 @@ def main():
     qwen_tokenizer = AutoTokenizer.from_pretrained(model_path)
 
     # 输入文本
-    input_file = "/root/autodl-tmp/code/2025service_creativity/process_dataset/mathNER/test.txt"
+    input_file = r"/root/autodl-tmp/code/2025service_creativity/process_dataset/mathNER/test.txt"
     if not os.path.exists(input_file):
         print(f"输入文件不存在: {input_file}")
         return
 
     # 输出 JSON
-    output_json = "/root/autodl-tmp/code/2025service_creativity/process_dataset/mathNER/test.json"
+    output_json = r"/root/autodl-tmp/code/2025service_creativity/process_dataset/mathNER/test.json"
 
     # 读取文本
     with open(input_file, "r", encoding="utf-8") as f:
